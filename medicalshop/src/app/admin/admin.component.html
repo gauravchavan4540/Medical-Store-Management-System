@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="dashboard">
+      <div class="button-group">
+          <div class="button-item">
+              <button class="btn btn-lg btn-outline-primary" (click)="addcatagory1()">Add Category</button>
+              <app-addcatagory *ngIf="addcatagory"></app-addcatagory>
+          </div>
+
+          <div class="button-item">
+              <button class="btn btn-lg btn-outline-secondary" (click)="showcategory1()">Show Category</button>
+              <app-showcategory *ngIf="showcategory"></app-showcategory>
+          </div>
+
+          <div class="button-item">
+              <button class="btn btn-lg btn-outline-secondary" (click)="attandace1()">Employee Attendance</button>
+              <app-employee-attandace *ngIf="attandace"></app-employee-attandace>
+          </div>
+
+          <div class="button-item">
+              <button class="btn btn-lg btn-outline-secondary" (click)="addemployee1()">Add Employee</button>
+              <app-addemployee *ngIf="addemployee"></app-addemployee>
+          </div>
+
+          <div class="button-item">
+              <button class="btn btn-lg btn-success" (click)="changeWhatToShow(1)">Add Product</button>
+          </div>
+
+          <div class="button-item" *ngIf="whatToShow == 1">
+              <app-add-product [products]="products" [categories]="categories"></app-add-product>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -1,0 +1,59 @@
+/* Container styling */
+.container {
+    max-width: 900px;
+  }
+  
+  /* Table styling */
+  .table {
+    margin-top: 20px;
+    background-color: #ffffff;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .thead-light th {
+    background-color: #e9ecef;
+    color: #495057;
+  }
+  
+  /* Form card styling */
+  .card.form-box {
+    max-width: 600px;
+    margin-top: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form control styling */
+  .form-control {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .form-box h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  button.btn-success {
+    padding: 12px 30px;
+    font-size: 18px;
+  }
+  
+  /* Centering the content */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Responsive table */
+  .table-responsive {
+    margin-bottom: 30px;
+  }
+  

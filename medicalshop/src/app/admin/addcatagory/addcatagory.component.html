@@ -1,0 +1,12 @@
+<div class="category-container">
+  <h2>Add New Category</h2>
+  <input [(ngModel)]="name" placeholder="Enter category name" class="input-box" />
+  <button (click)="addCategory()" class="add-button">Add Category</button>
+
+  <div *ngIf="list && list.length > 0" class="category-list">
+    <h3>Categories</h3>
+    <ul>
+      <li *ngFor="let category of list">{{ category.name }}</li>
+    </ul>
+  </div>
+</div>

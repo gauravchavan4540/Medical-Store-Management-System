@@ -1,0 +1,27 @@
+
+<div class="container">
+  <h2>नमस्ते, {{ name1 }}</h2>
+
+  <h3 class="mt-4">Today Attendance</h3>
+  
+  <input [(ngModel)]="employeename" placeholder="Enter category name" class="input-box" />
+  <button (click)="addCategory()" class="button attendance-button">Attendance</button>
+
+  <div *ngIf="list && list.length > 0" class="category-list">
+    <h3>Categories</h3>
+    <ul>
+      <li *ngFor="let category of list">{{ category.employee_name }}</li>
+    </ul>
+  </div>
+
+  <div class="button-container">
+    <button class="button show-category-button" (click)="showproduct1()">Show Category</button>
+    <button class="button generate-bill-button" (click)="generatebill1()">Generate Bill</button>
+  </div>
+
+  <app-show-product *ngIf="showproduct"></app-show-product>
+  <app-generate-bill *ngIf="generatebill"></app-generate-bill>
+
+</div>
+
+

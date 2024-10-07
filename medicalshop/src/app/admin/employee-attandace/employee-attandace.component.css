@@ -1,0 +1,62 @@
+/* General Container Styling */
+.container.product-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  /* Heading Styling */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem; /* Margin bottom for spacing */
+  }
+  
+  /* Table Wrapper Styling */
+  .table-wrapper {
+    overflow-x: auto; /* Allows horizontal scrolling on small screens */
+  }
+  
+  /* Table Styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background for the table */
+  }
+  
+  .table-bordered {
+    border: 1px solid #ddd; /* Light gray border for the table */
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd; /* Light gray border for cells */
+  }
+  
+  .table th {
+    background-color: #00796b; /* Teal background for header */
+    color: white;
+  }
+  
+  .table thead.light {
+    background-color: #004d40; /* Dark teal background for header */
+    color: white;
+  }
+  
+  /* No Products Styling */
+  .text-center {
+    font-size: 18px;
+    color: #555; /* Dark gray color for text */
+  }
+  

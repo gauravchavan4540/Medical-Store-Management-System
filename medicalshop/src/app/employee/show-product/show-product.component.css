@@ -1,0 +1,45 @@
+/* Center the entire page content */
+.product-container {
+    max-width: 900px; /* Max width for the container */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Padding around the container */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for box effect */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Styling the table */
+  .table {
+    width: 100%; /* Ensure table takes full width */
+    margin-bottom: 20px; /* Margin below table */
+  }
+  
+  .table th, .table td {
+    padding: 12px; /* Padding for table cells */
+    vertical-align: middle; /* Vertically center content */
+  }
+  
+  .thead-light th {
+    background-color: #e9ecef; /* Light background for table headers */
+  }
+  
+  /* Table box for added border */
+  .table-box {
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .table {
+      font-size: 0.9em; /* Slightly reduce font size for smaller screens */
+    }
+    
+    .product-container {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  }
+  

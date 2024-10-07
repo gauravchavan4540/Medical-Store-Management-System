@@ -1,0 +1,27 @@
+<div class="container product-container">
+    <h2 class="text-center mb-4">Product List</h2>
+    
+    <div *ngIf="list && list.length > 0; else noProducts" class="table-wrapper">
+      <table class="table table-bordered table-hover text-center">
+        <thead class="thead-light">
+          <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Employee Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of list">
+            <td>{{ product.id }}</td>
+            <td>{{ product.date }}</td>
+            <td>{{ product.employeeName }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <ng-template #noProducts>
+      <p class="text-center">No products available.</p>
+    </ng-template>
+  </div>
+  

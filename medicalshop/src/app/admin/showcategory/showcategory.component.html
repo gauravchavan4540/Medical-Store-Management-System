@@ -1,0 +1,16 @@
+<div class="category-list-container">
+  <h2>Category List</h2>
+
+  <div *ngIf="list && list.length > 0; else noCategories" class="category-list">
+    <ul>
+      <li *ngFor="let category of list">
+        <span>{{ category.name }}</span>
+        <button class="delete-button" (click)="deleteCategory(category.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+
+  <ng-template #noCategories>
+    <p>No categories available.</p>
+  </ng-template>
+</div>

@@ -1,0 +1,75 @@
+<div class="container mt-4">
+    <!-- Display Products -->
+    <h3 class="mb-4 text-center">Product List</h3>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover text-center">
+        <thead class="thead-light">
+          <tr>
+            <th>SN</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Discount</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.discount}}</td>
+            <td>{{product.catName}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Add New Product -->
+    <div class="card mx-auto p-4 form-box">
+      <h3 class="mb-4 text-center">Add New Product</h3>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" class="form-control" [(ngModel)]="name" name="productName">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="price">Price:</label>
+            <input type="number" id="price" class="form-control" [(ngModel)]="price" name="price">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" class="form-control" [(ngModel)]="quantity" name="quantity">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="description">Description:</label>
+            <input type="text" id="description" class="form-control" [(ngModel)]="description" name="description">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="discount">Discount:</label>
+            <input type="number" id="discount" class="form-control" [(ngModel)]="discount" name="discount">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="category">Category:</label>
+            <select id="category" class="form-control" [(ngModel)]="catid" name="category">
+              <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-success" type="button" (click)="addProduct()">Add Product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

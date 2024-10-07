@@ -1,0 +1,33 @@
+<div class="container product-container">
+    <h2 class="text-center mb-4">Product List</h2>
+    
+    <div *ngIf="list && list.length > 0; else noProducts">
+      <div class="table-box">
+        <table class="table table-bordered table-hover text-center">
+          <thead class="thead-light">
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Description</th>
+              <th>Discount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of list">
+              <td>{{ product.name }}</td>
+              <td>{{ product.price | currency }}</td>
+              <td>{{ product.quantity }}</td>
+              <td>{{ product.description }}</td>
+              <td>{{ product.discount }}%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <ng-template #noProducts>
+      <p class="text-center">No products available.</p>
+    </ng-template>
+  </div>
+  

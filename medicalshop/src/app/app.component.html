@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div *ngIf="whatToShow == 0" class="content-section">
+        <app-login></app-login>
+      </div>
+      <div *ngIf="whatToShow == 1" class="content-section">
+        <app-admin></app-admin>
+      </div>
+      <div *ngIf="whatToShow == 2" class="content-section">
+        <app-employee></app-employee>
+      </div>
+    </div>
+  </div>
+</div>
